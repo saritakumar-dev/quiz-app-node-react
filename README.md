@@ -42,3 +42,5 @@ QuizMaster is a full-stack Single Page Application (SPA) built with React. It al
 └── server/           # Node.js Backend (Separate Project)
        └── server.js          # Entry point and API Endpoints for the frontend
 
+
+Architecture Note: This is a decoupled full-stack application. The React SPA acts as the client-side interface, making asynchronous REST API calls to a Node.js/Express server which handles all database operations and business logic.
