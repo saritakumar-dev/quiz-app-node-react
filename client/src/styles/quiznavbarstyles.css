@@ -1,0 +1,52 @@
+/* Custom background and shadow */
+.custom-quiz-nav {
+  background-color: #0f172a !important; /* Deep Navy */
+  padding: 15px 0;
+  border-bottom: 2px solid #334155;
+}
+
+/* Brand/Logo Styling */
+.quiz-logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #38bdf8 !important; /* Sky Blue */
+  text-transform: uppercase;
+}
+
+/* Nav Link Styling */
+.nav-item-custom {
+  color: #94a3b8 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item-custom:hover {
+  color: #38bdf8 !important;
+}
+
+/* Active Route Styling */
+.nav-item-custom.active {
+  color: #ffffff !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item-custom.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #38bdf8;
+  bottom: -5px;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* Action Button */
+.login-btn {
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-weight: 600;
+  border: 2px solid #38bdf8;
+}
