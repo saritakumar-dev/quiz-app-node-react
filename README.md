@@ -82,8 +82,8 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 
        4. Start the server
               npm start
-
-       The server will typically run on http://localhost:5000
+   
+   The server will typically run on http://localhost:5000
 
 3. Frontend Setup (React)
    
