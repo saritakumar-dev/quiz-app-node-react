@@ -75,6 +75,20 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 
        The server will typically run on http://localhost:5000
 
+2. Frontend Setup (React)
+       1. Navigate to the client directory :
+              cd client
+       2. Install dependencies
+              npm install
+       3. Create a .env file to point to your backend API:
+             REACT_APP_API_URL=http://localhost:5000/api/questions
+       4. Start the React application:
+             npm start
+
+     The app will open typically at http://localhost:5173
+
 ```
----
+## 🗄️ Database Schema
+
+```
 
