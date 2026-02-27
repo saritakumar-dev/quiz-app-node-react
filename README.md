@@ -61,7 +61,7 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 
 ```
 ---
-⚙️ Installation and Setup
+## ⚙️ Installation and Setup
 
 1. Backend Setup (Node.js)
        1. Navigate to the server directory :
