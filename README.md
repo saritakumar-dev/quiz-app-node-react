@@ -133,7 +133,7 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
                PRIMARY KEY (`id`)
                ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-       ### **🧪 Sample Data Setup**
+### **🧪 Sample Data Setup**
        Run these queries to populate your application with test data so you can view them on the Dashboard immediately:
 
        Insert a Subject
