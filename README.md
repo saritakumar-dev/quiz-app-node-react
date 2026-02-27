@@ -136,7 +136,7 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 ### **🧪 Sample Data Setup**
        Run these queries to populate your application with test data so you can view them on the Dashboard immediately:
 
-       Insert a Subject
+* Insert a Subject
 
               INSERT INTO `quizmasterdb`.`subjects`
               (
@@ -148,6 +148,22 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
               'Mathematics',
               'BsCalculator',
               '#a78bfa');
+
+
+  * Insert a Question
+              INSERT INTO `quizmasterdb`.`questions`
+              (
+              `question_text`,
+              `subject`,
+              `marks_allotted`,
+              `chapter_name`)
+              VALUES
+              (
+              '6/10',
+              'Mathematics',
+              10,
+              'Ratio and Proportion');
+
                
 
 ```
