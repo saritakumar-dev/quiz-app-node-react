@@ -64,10 +64,13 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 ## ⚙️ Installation and Setup
 
 1. Backend Setup (Node.js)
+   
        1. Navigate to the server directory :
               cd server
+   
        2. Install dependencies
               npm install
+   
        3. Create a .env file and add your database credentials
               PORT = 5000
               Add these lines
@@ -83,12 +86,16 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
        The server will typically run on http://localhost:5000
 
 3. Frontend Setup (React)
+   
        1. Navigate to the client directory :
               cd client
+   
        2. Install dependencies
               npm install
+   
        3. Create a .env file to point to your backend API:
              VITE_API_URL=http://localhost:5000/api/questions
+   
        4. Start the React application:
              npm start
 
