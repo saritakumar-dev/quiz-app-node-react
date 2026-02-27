@@ -60,4 +60,21 @@ GET /api/quiz/:subjectId - Retrieves all questions and chapters for a specific s
 POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to the database.
 
 ```
+---
+⚙️ Installation and Setup
+
+1. Backend Setup (Node.js)
+       1. Navigate to the server directory :
+              cd server
+       2. Install dependencies
+              npm install
+       3. Create a .env file and add your database credentials
+              PORT = 5000
+       4. Start the server
+              npm start
+
+       The server will typically run on http://localhost:5000
+
+```
+---
 
