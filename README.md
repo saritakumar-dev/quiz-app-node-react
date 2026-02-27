@@ -121,6 +121,19 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
                PRIMARY KEY (`id`)
                ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+       3. Create the Questions Table
+              This table stores the quiz data, linked to a subject.
+              CREATE TABLE `questions` (
+              `id` int NOT NULL AUTO_INCREMENT,
+              `question_text` text NOT NULL,
+               `subject` varchar(255) NOT NULL,
+               `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+               `marks_allotted` int NOT NULL,
+               `chapter_name` varchar(45) NOT NULL,
+               PRIMARY KEY (`id`)
+               ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+              
                
 
 ```
