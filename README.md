@@ -113,19 +113,6 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
 
   ---
 
-## 🔌 API Documentation
-
-The React application communicates with the Node.js backend via the following REST endpoints:
-
-Subjects
-GET /api/subjects - Fetches all available subjects and their icons for the Dashboard.
-
-Quizzes
-GET /api/quiz/:subjectId - Retrieves all questions and chapters for a specific subject name.
-POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to the database.
-
-
----
 ## ⚙️ Installation and Setup
 
 1. Backend Setup (Node.js)
@@ -167,6 +154,22 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
      The app will open typically at http://localhost:5173
 
 ---
+  ---
+
+## 🔌 API Documentation
+
+The React application communicates with the Node.js backend via the following REST endpoints:
+
+Subjects
+GET /api/subjects - Fetches all available subjects and their icons for the Dashboard.
+
+Quizzes
+GET /api/quiz/:subjectId - Retrieves all questions and chapters for a specific subject name.
+POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to the database.
+
+
+---
+
 
 
 
