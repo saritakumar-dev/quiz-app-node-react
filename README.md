@@ -59,7 +59,7 @@ Quizzes
 GET /api/quiz/:subjectId - Retrieves all questions and chapters for a specific subject name.
 POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to the database.
 
-```
+
 ---
 ## ⚙️ Installation and Setup
 
