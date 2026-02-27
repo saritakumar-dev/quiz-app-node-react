@@ -151,7 +151,7 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
        4. Start the React application:
              npm start
 
-     The app will open typically at http://localhost:5173
+The app will open typically at http://localhost:5173
 
 ---
   
@@ -166,9 +166,32 @@ Quizzes
 GET /api/quiz/:subjectId - Retrieves all questions and chapters for a specific subject name.
 POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to the database.
 
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. **Fork** the Project.
+2. **Create** your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. **Push** to the Branch (`git push origin feature/AmazingFeature`).
+5. **Open** a Pull Request.
+
+### **Areas for Contribution:**
+* 🎨 Improving the UI/UX of the Quiz Screen.
+* 🛠️ Adding more question types using an API for General Knowledge on different topics.
+* 📱 Making the Dashboard fully responsive for mobile devices.
 
 ---
 
+## 📝 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+**Developed with ❤️ by [Sarita Kumar /saritakumar-dev]**
 
 
 
