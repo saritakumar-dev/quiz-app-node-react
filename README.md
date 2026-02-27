@@ -150,6 +150,8 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
               '#a78bfa');
 
 * Insert a Question
+
+  
               INSERT INTO `quizmasterdb`.`questions`
               (
               `question_text`,
