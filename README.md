@@ -149,8 +149,7 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
               'BsCalculator',
               '#a78bfa');
 
-
-  * Insert a Question
+* Insert a Question
               INSERT INTO `quizmasterdb`.`questions`
               (
               `question_text`,
