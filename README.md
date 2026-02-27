@@ -21,7 +21,7 @@ QuizMaster is a full-stack Single Page Application (SPA) built with React. It al
 
 *   **Frontend:** React.js (Hooks & Functional Components)
 *   **Routing:** React Router DOM
-*   **State Management:** React useState
+*   **State Management:** React useState, useEffect
 *   **Backend/DB:** MySQL 8.0
 *   **Icons:** Dynamically rendered from DB strings
 
