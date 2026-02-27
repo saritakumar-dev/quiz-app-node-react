@@ -115,7 +115,7 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
 
 ## ⚙️ Installation and Setup
 
-1. Backend Setup (Node.js)
+#### Backend Setup (Node.js)
    
        1. Navigate to the server directory :
               cd server
@@ -137,7 +137,7 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
    
    The server will typically run on http://localhost:5000
 
-3. Frontend Setup (React)
+#### Frontend Setup (React)
    
        1. Navigate to the client directory :
               cd client
@@ -154,8 +154,7 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
      The app will open typically at http://localhost:5173
 
 ---
-  ---
-
+  
 ## 🔌 API Documentation
 
 The React application communicates with the Node.js backend via the following REST endpoints:
