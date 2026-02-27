@@ -103,7 +103,25 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 
 ---
 
-## 🗄️ Database Schema
+## 🗄️ Database Setup and Schema
+
+       1. Create the Database
+       
+              CREATE DATABASE quizmasterdb;
+              USE quizmasterdb;
+
+       2. Create the Subjects Table
+              This table stores the categories seen on the dashboard.
+
+              CREATE TABLE `subjects` (
+              `id` int NOT NULL AUTO_INCREMENT,
+              `name` varchar(45) NOT NULL,
+              `iconName` varchar(45) NOT NULL,
+              `colorName` varchar(45) DEFAULT NULL,
+               PRIMARY KEY (`id`)
+               ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+               
 
 ```
 
