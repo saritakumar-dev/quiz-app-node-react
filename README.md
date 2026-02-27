@@ -48,6 +48,71 @@ Architecture Note: This is a decoupled full-stack application. The React SPA act
 ```
 ---
 
+## 🗄️ Database Setup and Schema
+
+       1. Create the Database
+       
+              CREATE DATABASE quizmasterdb;
+              USE quizmasterdb;
+
+       2. Create the Subjects Table
+              This table stores the categories seen on the dashboard.
+
+              CREATE TABLE `subjects` (
+              `id` int NOT NULL AUTO_INCREMENT,
+              `name` varchar(45) NOT NULL,
+              `iconName` varchar(45) NOT NULL,
+              `colorName` varchar(45) DEFAULT NULL,
+               PRIMARY KEY (`id`)
+               ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+       3. Create the Questions Table
+              This table stores the quiz data, linked to a subject.
+              CREATE TABLE `questions` (
+              `id` int NOT NULL AUTO_INCREMENT,
+              `question_text` text NOT NULL,
+               `subject` varchar(255) NOT NULL,
+               `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+               `marks_allotted` int NOT NULL,
+               `chapter_name` varchar(45) NOT NULL,
+               PRIMARY KEY (`id`)
+               ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+### **🧪 Sample Data Setup**
+       Run these queries to populate your application with test data so you can view them on the Dashboard immediately:
+
+#### Insert a Subject
+
+              INSERT INTO `quizmasterdb`.`subjects`
+              (
+              `name`,
+              `iconName`,
+              `colorName`)
+              VALUES
+              (
+              'Mathematics',
+              'BsCalculator',
+              '#a78bfa');
+
+#### Insert a Question
+
+  
+              INSERT INTO `quizmasterdb`.`questions`
+              (
+              `question_text`,
+              `subject`,
+              `marks_allotted`,
+              `chapter_name`)
+              VALUES
+              (
+              '6/10',
+              'Mathematics',
+              10,
+              'Ratio and Proportion');
+
+
+  ---
+
 ## 🔌 API Documentation
 
 The React application communicates with the Node.js backend via the following REST endpoints:
@@ -103,69 +168,7 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
 
 ---
 
-## 🗄️ Database Setup and Schema
 
-       1. Create the Database
-       
-              CREATE DATABASE quizmasterdb;
-              USE quizmasterdb;
-
-       2. Create the Subjects Table
-              This table stores the categories seen on the dashboard.
-
-              CREATE TABLE `subjects` (
-              `id` int NOT NULL AUTO_INCREMENT,
-              `name` varchar(45) NOT NULL,
-              `iconName` varchar(45) NOT NULL,
-              `colorName` varchar(45) DEFAULT NULL,
-               PRIMARY KEY (`id`)
-               ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-       3. Create the Questions Table
-              This table stores the quiz data, linked to a subject.
-              CREATE TABLE `questions` (
-              `id` int NOT NULL AUTO_INCREMENT,
-              `question_text` text NOT NULL,
-               `subject` varchar(255) NOT NULL,
-               `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-               `marks_allotted` int NOT NULL,
-               `chapter_name` varchar(45) NOT NULL,
-               PRIMARY KEY (`id`)
-               ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-### **🧪 Sample Data Setup**
-       Run these queries to populate your application with test data so you can view them on the Dashboard immediately:
-
-* Insert a Subject
-
-              INSERT INTO `quizmasterdb`.`subjects`
-              (
-              `name`,
-              `iconName`,
-              `colorName`)
-              VALUES
-              (
-              'Mathematics',
-              'BsCalculator',
-              '#a78bfa');
-
-* Insert a Question
-
-  
-              INSERT INTO `quizmasterdb`.`questions`
-              (
-              `question_text`,
-              `subject`,
-              `marks_allotted`,
-              `chapter_name`)
-              VALUES
-              (
-              '6/10',
-              'Mathematics',
-              10,
-              'Ratio and Proportion');
-
-               
 
 ```
 
