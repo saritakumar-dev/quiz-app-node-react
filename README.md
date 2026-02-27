@@ -70,12 +70,19 @@ POST /api/quiz/create - Submits a new quiz (questions, chapters, and marks) to t
               npm install
        3. Create a .env file and add your database credentials
               PORT = 5000
+              Add these lines
+                 DB_HOST=<db_servername>
+                 DB_USER=<db_username>
+                 DB_PASSWORD=<db_password>
+                 DB_NAME=<db_name>
+                 DB_CONNECTION_LIMIT=10
+
        4. Start the server
               npm start
 
        The server will typically run on http://localhost:5000
 
-2. Frontend Setup (React)
+3. Frontend Setup (React)
        1. Navigate to the client directory :
               cd client
        2. Install dependencies
